@@ -1,0 +1,161 @@
+/* This defines a custom font called "Roboto" so it can be used in the document. */
+@font-face {
+    font-family: "Roboto";
+    src: url("./Fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+/* It applies a font family to the entire document. */ 
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+/* It applies a background color to the body. */ 
+body {
+    background-color:azure;
+}
+
+/* It sets the style of all <a> elements, including the color and the font. It also removes the underline links have. */
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* It applies a hover effect to all <a> elements. */
+a:hover {
+    color:rgb(214, 210, 238);
+}
+
+/* It applies a different font size and color to all headings. It also centers the text, adds an underline, and adds a top and bottom margin. */
+h1 {
+    font-size: 36px;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* It sets the style of all h2 elements in the document. */
+h2 {
+    font-size: 22px;
+    color:black
+    
+}
+
+/* It sets the style of all h2 elements in the document with class "importantsubtitle". */
+h2.importantsubtitle {
+    text-decoration: underline;
+}
+
+/* It sets the style of all elements with class "smalltext", including the font size, the color, and top and bottom margin. */
+.smalltext{
+    font-size: 14px;
+    color:black;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* It sets the style of the <nav> element in the document. */
+nav {
+    background-color: black;
+}
+
+/* It sets the style of the <ul> element within the <nav> element, removing the bullet points, setting the margin and padding to 0, 
+and displaying the list items in a flex container with equal space around them. */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+/* This selector targets all li elements that are direct children of the nav element. It uses the property "inline-block" and adds padding to the element to create an inline nav menu.*/
+nav li {
+    display: inline-block;
+    padding: 12px;
+}
+/* This CSS selector targets all <li> with <a> elements that have an href attribute starting with "imdb". It sets their text color to black, removes the underline,
+    and makes the text bold. This will affect all links to IMDb pages. */
+li a[href^="https://www.imdb.com/title/"]{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* This applies a hover effect to all <a> elements within <li> elements with a specific href attribute starting with "https://www.imdb.com/title/". */
+li a[href^="https://www.imdb.com/title/"]:hover{
+    color:rgb(214, 210, 238);
+}
+
+/* This selector sets the style of all <a> elements within the <nav> element, displaying them in a rectangular block thanks to the display "block" property, 
+    adding a white color and centering the text, . */
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: underline #ececec;
+}
+
+/* This selector targets all <a> elements inside the <nav> element and changes their color when hovering. */
+nav a:hover {
+    color:rgb(214, 210, 238);
+}
+
+/* It targets the class "imagecontainer" and applies flexbox properties to it. using "display: flex", centering it and aligning it. */
+.imagecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* It targets the child img element of the element class "imagecontainer". It sets the width to 80% of its container, and the margins. */
+.imagecontainer img {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* It targets the main element and sets its left and right margins to auto to horizontally center it. It also sets its width to 80%. */
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* It targets the elements with class "aboutauthorcontainer" and applies flexbox  and padding properties.*/
+.aboutauthorcontainer {
+    display: flex;
+}
+
+/* It targets the element ID "abouttheauthor", adding a 5px solid border with color. It also adds padding properties.*/
+#abouttheauthor {
+    border: 5px solid #ccc;
+    padding: 25px;
+    padding-left: 30px;
+}
+
+/* It targets the img element, which is a child of the ID "abouttheauthor". It uses the float property to "left" to make the image align to the left side
+    of its container, adds a margin and a max-width to manage its size.*/
+#abouttheauthor img {
+    float: left;
+    margin-right: 20px;
+    max-width: 10%;
+    height: auto;
+}
+
+/* It targets the P element, which is a child of the ID "abouttheauthor". It justifies the text , adds a margin, wraps the text and adjusts the width.*/
+#abouttheauthor p {
+    width: 70%;
+    margin-left: 20px;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+/* It targets the footer element, centering its text and adding margins.*/
+footer {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
